@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/remove.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="overlay">
+      <form id="login-form" class="hidden">
+        <!-- to validate the form, and do some funtions like required, input tag should be under form tag-->
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?"
+        />
+        <input type="submit" value="Log In" class="submit-button" />
+        <br />
+      </form>
+      <div id="main">
+        <h2 id="clock">00:00</h2>
+        <h1 id="greeting" calss="hidden"></h1>
+        <div id="quote">
+          <span></span>
+          <span></span>
+          <span class="author"></span>
+        </div>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+        <form id="todo-form">
+          <input type="text" placeholder="write what to do" />
+        </form>
+        <div id="todo-box">
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
